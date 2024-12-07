@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Life Story</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #e7e6e1;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            padding-bottom: 60px; 
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0d1b2a;
+            padding: 10px 40px;
+            color: white;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+        nav ul {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        table {
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+			margin: 5px auto;
+        }
+		td {
+			padding: 30px;
+		}
+		.content-box {
+            background-color: rgba(13, 27, 42, 0.7);
+            width: auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .content {
+            padding: 20px;
+        }
+		.content h1 {
+			font-size: 40px;
+			text-align: center;
+			color: #0d1b2a;
+        }
+        .content h3 {
+			text-align: center;
+			color: #e7e6e1;
+        }
+        .content p {
+			text-align: left;
+            line-height: 1.8;
+        }
+		ul {
+			line-height: 1.8;
+		}
+
+        .gallery img {
+            width: 45%;
+			height: 45%;
+        }
+        footer {
+            background-color: #0d1b2a;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+		@media (max-width: 768px) {
+			header {
+				flex-direction: column;
+				padding: 20px;
+			}
+			nav ul {
+				flex-direction: column;
+				gap: 10px;
+			}
+			.content-box {
+				flex-direction: column;
+				padding: 15px;
+				width: 100%;
+			}
+
+			.gallery img {
+				width: 100%;
+				height: auto;
+			}
+			table {
+				width: 100%;
+				padding: 10px;
+			}
+			footer p {
+				font-size: 14px;
+			}
+		}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="home.html"><img src="images/logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+	<table>
+		<tr>
+			<td colspan=2 class="content">
+			<h1> About Me </h1>
+			<p style="color:#0d1b2a;text-align:center">"Looks like you are a bit curious about me."</p>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+			<div class="content-box">
+				<div class="gallery">
+                    <img src="images/about_me.jpg" alt="me">
+                </div>
+			</div>
+			</td>
+			<td>
+			<div class="content-box">
+			<div class="content">
+				<h3>My Biodata</h3><br><hr color="#0d1b2a"><br>
+				<p><ul type="square" style="color: #e7e6e1">
+					<li>
+					<b>Full Name:</b> Nisa Afiqah binti Iskandar
+					</li>
+					<li>
+					<b>Nickname:</b> Nisa
+					</li>
+					<li>
+					<b>Date of Birth:</b> 10 January 2004
+					</li>
+					<li>
+					<b>Place of Birth:</b> Hospital Kajang
+					</li>
+					<li>
+					<b>From:</b> Cheras, Selangor
+					</li>
+					<li>
+					<b>Hobby:</b> Listening to Music
+					</li>
+					<li>
+					<b>Status:</b> Single
+					</li>
+				</ul></p>
+			</div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td rowspan=2>
+			<div class="content-box">
+			<div class="content">
+				<h3>A Little Trivia About Me</h3><br><hr color="#0d1b2a"><br>
+				<p><ul type="square" style="color: #e7e6e1">
+					<li>
+					I'm the second child out of four siblings.
+					</li>
+					<li>
+					My current favourite colour is blue and dark red.
+					</li>
+					<li>
+					I don't actually have a favourite food.
+					</li>
+					<li>
+					I might look unapproachable but trust me, I'm just shy and having my guards up around new people.
+					</li>
+					<li>
+					I cannot stand bright lights.
+					</li>
+					<li>
+					I get dizzy everytime I'm inside a place that has so much things like a supermarket or malls for unknown reasons.
+					</li>
+					<li>
+					I hate feeling left out.
+					</li>
+					<li>
+					I hate two faced people.
+					</li>
+					<li>
+					Do not raise your voice at me.
+					</li>
+					<li>
+					When I'm angry, I try my best not to explode and I might cry.
+					</li>
+					<li>
+					I prefer being alone when I'm not in a good mood.
+					</li>
+					<li>
+					Believe it or not, I prefer programming courses over courses that require me to memorise a lot of facts, although I prayed I wouldn't get an IT-related diploma program when I was in high school.
+					</li>
+					<li>
+					I love NCT.
+					</li>
+				</ul></p>
+			</div>
+			</div>
+			</td>
+			<td align="center">
+			<div class="content-box">
+			<div class="content">
+				<h3>Current Favourite Song</h3><br><hr color="#0d1b2a"><br>
+				<iframe src="https://www.youtube.com/embed/wo6r9TgausI" height="210" width="auto" title="Current Favourite Song"></iframe>
+			</div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" >
+			<div class="content-box">
+			<div class="content">
+				<h3>Life Quotes</h3><br><hr color="#0d1b2a"><br>
+				<p style="color: #e7e6e1; text-align: center"><i>"Life can be challenging sometimes. Things might go wrong. But you can do this. You already came so far. Keep going. If you can't do it, just do it."</i></p>
+			</div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan=2 style="color: #0d1b2a; text-align: center;">
+				<a href="about.html" style="text-decoration: none; color: #0d1b2a; font-weight: bold;">Back</a>
+			</td>
+		</tr>
+	</table>
+		
+    <footer>
+        <p>&copy; 2024 My Life Story. All rights reserved.</p>
+    </footer>
+</body>
+</html>

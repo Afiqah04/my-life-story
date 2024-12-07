@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Life Story</title>
+	<style>
+		*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+		body {
+			background-color: #e7e6e1;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+		 header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0d1b2a;
+            padding: 5px 40px;
+            color: white;
+			flex-wrap: wrap;
+        }
+		.logo {
+            display: flex;
+            align-items: center;
+			flex-wrap: wrap;
+        }
+		.logo img {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+		nav ul{
+            display: flex;
+            gap: 15px;
+			list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+		table {
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+			margin: 5px auto;
+        }
+		td {
+			padding: 30px;
+		}
+		.content-box {
+			display: flex; 
+			align-items: center;
+			gap: 15px; 
+			background-color: rgba(13, 27, 42, 0.7);
+			width: auto;
+			padding: 20px;
+			border-radius: 15px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		}
+
+		.gallery img {
+			width: 150px; 
+			height: auto; 
+			border-radius: 10px;
+		}
+
+		.text-content {
+			color: white;
+			line-height: 1.5; 
+		}
+
+        .content {
+            padding: 20px;
+        }
+		.content h1 {
+			font-size: 40px;
+			text-align: center;
+			color: #0d1b2a;
+        }
+        .content h3 {
+			color: #e7e6e1;
+        }
+        .content p {
+            line-height: 1.8;
+        }
+		ul {
+			line-height: 1.8;
+		}
+        footer {
+            background-color: #0d1b2a;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+		@media (max-width: 768px) {
+			header {
+				flex-direction: column;
+				padding: 20px;
+			}
+			nav ul {
+				flex-direction: column;
+				gap: 10px;
+			}
+			.content-box {
+				flex-direction: column;
+				padding: 15px;
+				width: 100%;
+			}
+
+			.gallery img {
+				width: 100%;
+				height: auto;
+			}
+			table {
+				width: 100%;
+				padding: 10px;
+			}
+			footer p {
+				font-size: 14px;
+			}
+		}
+    </style>
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+            <a href="home.html"><img src="images/logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="education.html">Education</a></li>
+				<li><a href="experience.html">Experience</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+        </nav>
+    </header>
+	
+	<table>
+		<tr>
+			<td rowspan=2 class="content">
+				<h1>My Education </h1>
+				<p style="color:#0d1b2a;text-align:center">"My Study Journey."</p>
+			</td>
+			<td>
+				<div class="content-box">
+					<div class="gallery">
+						<img src="images/edu1.jpg" alt="edu 1">
+					</div>
+					<div class="text-content">
+						<h3>Pra Sekolah SK Bukit Raya</h3>
+						<p>2009 - 2010</p>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="content-box">
+					<div class="gallery">
+						<img src="images/edu2.jpg" alt="edu 2">
+					</div>
+					<div class="text-content">
+						<h3>SK Bukit Raya / <br> SRA Batu 10</h3>
+						<p>2011 - 2016</p>
+						<p>UPSR: 4A 2B <br> PSRA: Mumtaz</p>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="content-box">
+					<div class="gallery">
+						<img src="images/edu3.jpg" alt="edu 3">
+					</div>
+					<div class="text-content">
+						<h3>SMK Dusun Nanding</h3>
+						<p>2017 - 2022</p>
+						<p>PT3: 4A 3B 2C <br> SPM: 2A 1A- 2B+ 1C+ 2C 1D</p>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="content-box">
+					<div class="gallery">
+						<img src="images/edu4.jpg" alt="edu 4">
+					</div>
+					<div class="text-content">
+						<h3>UiTM Rembau</h3>
+						<p>2022 - Now</p>
+						<p>CGPA: 3.73</p>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+	
+	<footer>
+        <p>&copy; 2024 My Life Story. All rights reserved.</p>
+    </footer>
+	
+</body>
+
+</html>

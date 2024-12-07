@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Life Story</title>
+	<style>
+		*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+		body {
+			background-color: #e7e6e1;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+		 header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0d1b2a;
+            padding: 5px 40px;
+            color: white;
+			flex-wrap: wrap;
+        }
+		.logo {
+            display: flex;
+            align-items: center;
+			flex-wrap: wrap;
+        }
+		.logo img {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+		nav ul{
+            display: flex;
+            gap: 15px;
+			list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+		
+		.content {
+			text-align: center;
+			color: #0d1b2a;
+            padding: 30px;
+			flex-wrap: wrap;
+			}
+		.content h1 {	
+			font-size: 40px;
+			}
+		.content p {
+            line-height: 1.6;
+			}
+		
+		.contact {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			color: #0d1b2a;
+		}
+		.contact-box {
+			display: flex;
+			align-items: center;
+			background-color: #0d1b2a;
+			padding: 15px;
+			margin: 10px 0;
+			border-radius: 8px;
+			box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+			width: 70%;
+			max-width: 400px;
+		}
+
+		.icon {
+			width: 45px;
+			height: 45px;
+			margin-right: 15px;
+		}
+
+		.contact-box a {
+			color: #e7e6e1;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		.contact-box:hover {
+            transform: scale(1.05);
+        }
+		
+        footer {
+            background-color: #0d1b2a;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+		@media (max-width: 768px) {
+			header {
+				flex-direction: column;
+				padding: 20px;
+			}
+			nav ul {
+				flex-direction: column;
+				gap: 10px;
+			}
+			.content-box {
+				flex-direction: column;
+				padding: 15px;
+				width: 100%;
+			}
+
+			.gallery img {
+				width: 100%;
+				height: auto;
+			}
+			table {
+				width: 100%;
+				padding: 10px;
+			}
+			footer p {
+				font-size: 14px;
+			}
+		}
+
+    </style>
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+            <a href="home.html"><img src="images/logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="education.html">Education</a></li>
+				<li><a href="experience.html">Experience</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+        </nav>
+    </header>
+	
+	<div class="content">
+        <h1>Got Something to Share?</h1>
+        <p>"Feel free to reach out to me through any of these platforms if you have any enquiries."</p><hr>
+	</div>
+	
+	<div class="contact">	
+		<div class="contact-box">
+        <img src="images/instagram.png" alt="Instagram" class="icon">
+        <a href="https://www.instagram.com/ni.af_04/profilecard/?igsh=NHBxcXA3eThtd2Rh" target="_blank">@ni.af_04</a>
+		</div>
+		
+		<div class="contact-box">
+			<img src="images/tiktok.png" alt="TikTok" class="icon">
+			<a href="https://www.tiktok.com/@ni.af_04?_t=8r5D4BzkIsu&_r=1" target="_blank">@ni.af_04</a>
+		</div>
+		
+		<div class="contact-box">
+			<img src="images/email.png" alt="Email" class="icon">
+			<a href="mailto:nisaqah@gmail.com">nisaqah@gmail.com</a>
+		</div>
+		
+		<div class="contact-box">
+			<img src="images/whatsapp.png" alt="Whatsapp" class="icon">
+			<a href="https://wa.me/qr/VNJ5TJ62AG4DH1" target="_blank">010-9566887</a>
+		</div>
+	</div>
+	
+	<footer>
+        <p>&copy; 2024 My Life Story. All rights reserved.</p>
+    </footer>
+	
+</body>
+
+</html>
